@@ -10,7 +10,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    "apps.customer.apps.CustomerConfig",
+    "apps.account.apps.AccountConfig",
+    "apps.transaction.apps.TransactionConfig",
+]
 
 THIRD_PARTY_APPS = [
     "rest_framework",
